@@ -1,0 +1,27 @@
+{
+    "tables": {
+        "inventory": [
+            "product_id",
+            "product_name",
+            "total_qty",
+            "last_updated"
+        ],
+        "purchases": [
+            "purchase_id",
+            "invoice_number",
+            "buy_date",
+            "due_date",
+            "product_name",
+            "qty",
+            "price"
+        ],
+        "sales": [
+            "sale_id",
+            "product_name",
+            "qty",
+            "price",
+            "total_price",
+            "sale_date"
+        ]
+    }
+}

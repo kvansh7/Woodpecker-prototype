@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: url('/path/to/museo-sans.woff2') format('woff2'),
+       url('/path/to/museo-sans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Museo Sans', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #02010A; /* Dark background color */
+    color: #FFFFFF; /* White text color for contrast */
+    font-family: 'Museo Sans', sans-serif; /* Set font to Museo Sans */
+  }
+}
+
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 0.6s linear infinite;
+  animation: spinner 0.6s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
